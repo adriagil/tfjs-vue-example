@@ -21,7 +21,7 @@ npm run build
 ```
 
 ### Serving custom model
-Is important to copy your trained model into a folder called web_model in the root directory and the run:
+Is important to copy your trained model into a folder called "web_model" in the root directory and then run:
 ```
 node_modules/http-server/bin/http-server -c1 --cors .
 ```
