@@ -1,11 +1,9 @@
-# tfjs-coco-ssd-vue-example
-A tensorflow.js coco-ssd example made with Vue.js. Ready your webcam and have fun.
-
-## Live demo (on CodeSandBox)
-[https://4zrnz12744.codesandbox.io/](https://4zrnz12744.codesandbox.io/)
+# tfjs-vue-example
+This is a demo application that uses Vue.js and a webcam to detect Jagermeister bottles in video and/or images.
+Code adapted to fit the requirements from the following project: [tfjs-coco-ssd-vue-example](https://github.com/freshsomebody/tfjs-coco-ssd-vue-example)
 
 ## Demo screenshot
-![demo-image1](demo-images/image1.png)
+![demo-image1](demo-images/jagerbottle-detection.png)
 
 ## Project setup
 ```
@@ -22,9 +20,15 @@ npm run serve
 npm run build
 ```
 
+### Serving custom model
+Is important to copy your trained model into a folder called web_model in the root directory and the run:
+```
+node_modules/http-server/bin/http-server -c1 --cors .
+```
+
 ### App url (in local dev server)
 [http://localhost:8080/](http://localhost:8080/)
 
 ## References
-- [tfjs-models/coco-ssd](https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd)
-- [TensorFlow.js — Real-Time Object Detection in 10 Lines of Code](https://hackernoon.com/tensorflow-js-real-time-object-detection-in-10-lines-of-code-baf15dfb95b2)
+- [A step-by-step guide on Medium](https://medium.com/@driagil/training-tensorflow-object-detection-api-with-custom-dataset-for-working-in-javascript-and-vue-js-6634e0f33e03)
+- [Creating your own object detector with Tensorflow](https://towardsdatascience.com/creating-your-own-object-detector-ad69dda69c85)
